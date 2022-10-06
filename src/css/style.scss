@@ -6,7 +6,7 @@
 
 @import "sass/colors";
 @import "sass/layout";
-@import "sass/spacing";
+
 @import "sass/typography";
 
 html {
@@ -31,16 +31,37 @@ body {
   }
 }
 
-.border {
-  border: 1px solid red;
-}
+.btn {
+  display: inline-block;
+  color: $white-light;
+  transition: 0.6s ease;
+  padding: 8px 24px;
+  text-align: center;
+  border: 0;
+  width: 100%;
 
-.hidden {
-  overflow: hidden;
-}
+  background: linear-gradient(
+    269.73deg,
+    #f8d629 1.16%,
+    rgba(188, 235, 54, 0.92) 98.13%
+  );
+  border-radius: 4px;
 
-.relative {
+  @include typeface-2(p3, desktop);
+  @include responsive(s) {
+    @include typeface-2(p3, mobile);
+    padding: 16px 24px;
+  }
+  @include responsive(xs) {
+    @include typeface-2(p3, smallmobile);
+    padding: 16px 24px;
+  }
+
   position: relative;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 svg,
@@ -48,5 +69,3 @@ img {
   width: 100%;
   //height: auto;
 }
-
-@import "sass/icons";
