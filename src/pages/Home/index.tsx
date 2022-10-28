@@ -3,7 +3,7 @@ import { Adopt } from "../../components/Adopt";
 import { Contact } from "../../components/Contact";
 import { Header } from "../../components/Header";
 import { HowToHelp } from "../../components/HowToHelp";
-import { Main } from "../../components/Main";
+import { MainContent } from "../../components/MainContent";
 
 export const Home = () => {
   return (
@@ -15,7 +15,7 @@ export const Home = () => {
 
       <Header />
       <div className="w-[100vw] h-full">
-        <Main />
+        <MainContent />
       </div>
       <div className="w-[100vw] h-full bg-secondary">
         <About />

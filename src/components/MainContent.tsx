@@ -1,12 +1,16 @@
 import React, { Component } from "react";
+
 import petsImg from "../assets/pets.png";
 import bgPetsImg from "../assets/bg-pets.svg";
 import bgEllipse from "../assets/bg-ellipse.svg";
 
-export const Main = () => {
+export const MainContent = () => {
   return (
     <>
       <main className="container p-0">
+        <div className="row">
+          <h1>Cadastrar Pet Para adoção</h1>
+        </div>
         <div className="row">
           <div className="grid-6">
             <div className="mb-6">
