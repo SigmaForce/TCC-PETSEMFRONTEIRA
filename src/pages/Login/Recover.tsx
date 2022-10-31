@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
 export const Recover = () => {
   return (
     <>
-      <div className="w-full h-full  bg-primary ">
+      <div className="w-full h-screen  bg-primary ">
         <section className="container">
           <div className="row">
             <div className="grid-4"></div>
@@ -29,9 +30,9 @@ export const Recover = () => {
                 <button className="btn font-medium">Enviar</button>
                 <span className="mt-2">
                   {" "}
-                  <a className="text-amber-300 font-medium" href="">
+                  <Link to="/" className="text-amber-300 font-medium">
                     Voltar a página inicial
-                  </a>{" "}
+                  </Link>{" "}
                 </span>
               </div>
             </div>

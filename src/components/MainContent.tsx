@@ -9,9 +9,6 @@ export const MainContent = () => {
     <>
       <main className="container p-0">
         <div className="row">
-          <h1>Cadastrar Pet Para adoção</h1>
-        </div>
-        <div className="row">
           <div className="grid-6">
             <div className="mb-6">
               <strong className="text-7xl text-white block ">Não Compre</strong>

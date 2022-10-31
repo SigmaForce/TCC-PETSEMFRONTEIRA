@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export const Reset = () => {
   return (
     <>
@@ -51,9 +52,9 @@ export const Reset = () => {
                 <button className="btn font-medium">Resetar senha</button>
                 <span className="mt-2">
                   {" "}
-                  <a className="text-amber-300 font-medium" href="">
+                  <Link to="/" className="text-amber-300 font-medium">
                     Voltar a página inicial
-                  </a>{" "}
+                  </Link>{" "}
                 </span>
               </div>
             </div>

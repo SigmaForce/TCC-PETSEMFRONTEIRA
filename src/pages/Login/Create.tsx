@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export const Create = () => {
   return (
     <>
@@ -78,12 +79,12 @@ export const Create = () => {
                 <div>
                   <span className="text-white text-lg mt-2">
                     Já tem uma conta?{" "}
-                    <a
+                    <Link
+                      to="/login"
                       className="text-lg text-amber-300 font-bold hover:opacity-90 transition-colors"
-                      href=""
                     >
                       Clique aqui para entrar
-                    </a>{" "}
+                    </Link>{" "}
                   </span>
                 </div>
               </div>

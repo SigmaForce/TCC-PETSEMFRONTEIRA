@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import pets from "../../assets/pets.png";
 
 export const Login = () => {
@@ -38,19 +39,22 @@ export const Login = () => {
                 <a href="" className="text-white font-semibold text-lg">
                   Lembrar-me
                 </a>
-                <a href="" className="text-white font-semibold text-lg">
+                <Link
+                  to="/recover"
+                  className="text-white font-semibold text-lg"
+                >
                   Esqueceu a senha?
-                </a>
+                </Link>
               </div>
               <div className="div">
                 <span className="text-white mt-2">
                   Não tem uma Conta?
-                  <a
-                    href="#"
+                  <Link
+                    to="/create"
                     className="text-[#F8D629] font-bold hover:text-white transition-colors"
                   >
                     Clique aqui para Registrar-se
-                  </a>
+                  </Link>
                 </span>
               </div>
             </div>
