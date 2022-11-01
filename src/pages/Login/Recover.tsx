@@ -16,7 +16,7 @@ export const Recover = () => {
                 </strong>
                 <span className="font-medium text-white block mb-2">
                   Informe seu email e enviaremos um link para você voltar a
-                  acessar sua conta.
+                  acessar sua conta. 
                 </span>
               </div>
               <div>
